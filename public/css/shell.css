@@ -1,0 +1,55 @@
+.shellWin{
+	position: absolute;
+	top: 1.55em;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 1.55em);
+	border-radius: 0 0 8px 8px;
+	background-color: #000;
+	overflow: auto;
+}
+.hostLine{
+	color: rgb(117, 250, 119);
+}
+.shellSect{
+	display: inline;
+	line-height: 1.2em;
+	font-size: 1em;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.shellSect b{
+	line-height: 1.2em;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.shellSect pre{
+	display: inline;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	line-height: 1.2em;
+	font-size: 1em;
+	margin: 0 0 0 1ch;
+	padding: 0;
+}
+@keyframes curBeam{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+.shellCur{
+	font-style: normal;
+	height: 0.8em;
+	line-height: 0.8em;
+	font-size: 0.8em;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	animation-name: curBeam;
+    animation-duration: 1s;
+	animation-timing-function:linear;
+	animation-iteration-count: infinite;
+}

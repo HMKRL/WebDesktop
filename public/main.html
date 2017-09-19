@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WebDesktop</title>
+		<script src="js/main.js" charset="utf-8"></script>
+		<script src="js/shell.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/main.css" media="screen">
+		<link rel="stylesheet" href="css/shell.css" media="screen">
+		<link rel="stylesheet" href="css/file.css" media="screen">
+		<link rel="stylesheet" href="css/font-awesome.css" media="screen">
+	</head>
+	<body onclick="bodyClick()"
+		  onmousemove="windowMove(event)"
+		  onmouseup="windowUp()"
+		  onkeydown="keyEvent(event)">
+		<section id="desktop">
+
+		</section>
+		<nav id="menu">
+			<div class="menuItem" id="shellMenu" onclick="itemClick(event, 'Terminal')">
+                <i class="fa fa-terminal"></i>
+				<b>Terminal</b>
+			</div>
+			<br>
+			<div class="menuItem" id="fileMenu" onclick="itemClick(event, 'File Browser')">
+                <i class="fa fa-folder"></i>
+				<b>File Browser</b>
+			</div>
+			<br>
+			<div class="menuItem" id="editMenu" onclick="itemClick(event, 'Text Editor')">
+                <i class="fa fa-file-text"></i>
+				<b>Text Editor</b>
+			</div>
+			<br>
+			<div class="menuItem" id="compileMenu" onclick="itemClick(event, 'Compile')">
+                <i class="fa fa-gears"></i>
+				<b>Compile</b>
+			</div>
+		</nav>
+		<footer id="footer">
+			<div id="menuBtn" onclick="menuClick(event)">
+				<i class="fa fa-navicon"></i>
+				&nbsp;Menu
+			</div>
+		</footer>
+	</body>
+</html>
